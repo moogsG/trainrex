@@ -10,8 +10,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/slick-theme.css">
         <style>
@@ -20,7 +21,7 @@
                 padding-bottom: 20px;
             }
         </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -41,15 +42,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">TrainRex</a>
+          <a class="navbar-brand" href="#" style="padding:2px"><span><img src="./imgs/logo.png" width="50" height="50" style="padding-top:0" alt=""></span></a>
+            <span class="text-center logo-font"><p>Train Rex</p></span>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <div class="navbar-form navbar-right">
             <div class="form-group">
-              <a href="#">Link</a>
+              <a href="#">Programs</a>
             </div>
             <div class="form-group">
-                <a href="#">Link</a>
+                <a href="#">Testimonials</a>
             </div>
             <button class="btn btn-success">Contact</button>
           </div>
@@ -62,7 +64,7 @@
         <div id="myCarousel" class="carousel slide">
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="http://lorempixel.com/1280/1024/technics">
+                    <img src="./imgs/9.jpg">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Example headline.</h1>
@@ -72,7 +74,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="http://lorempixel.com/1280/1024/technics" alt="">
+                    <img src="./imgs/5.jpg" alt="">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Another example headline.</h1>
@@ -82,7 +84,17 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="http://lorempixel.com/1280/1024/abstract" alt="">
+                    <img src="./imgs/6.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>One more for good measure.</h1>
+                            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./imgs/3.jpg" alt="">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>One more for good measure.</h1>
@@ -98,6 +110,26 @@
 
 
     <div class="container">
+
+      <div style="min-height:50vh;" class="text-center">
+          <h2>We Know Your Dog is a Family Member!</h2>
+          <p>
+              Our goal is to help you to achieve a happy dog that
+              wherever you go, can be a part of your everyday life!
+              Leave it to us!
+          </p><p>
+              The best part? Along with 2 different programs, we offer free demonstrations for you to come out with your dog and see first-hand what you can expect from us!
+          </p>
+          <hr>
+          <div class="text-center">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-info">Book a demonstrations</button>
+                  <button type="button" class="btn btn-info">View our programs</button>
+                  <!--<button type="button" class="btn btn-secondary"></button>-->
+              </div>
+          </div>
+
+      </div>
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
@@ -123,14 +155,16 @@
         <div class="boardTrain">
             <div class="row">
                 <div class="col-md-6">
-                    <h3>Board & Train</h3>
-                    <p>Our Board & Train program runs for 2 straight weeks.
-                        Let us do the work for you! We offer a “real life distractions” based program with a very flexible schedule.  Your dog moves into our house with us and our 3 dogs, and becomes a part of our family!
-                        Along with love, we introduce obedience commands through playing games and focused lessons throughout the day. Teaching your dog to maintain commands until released will build a whole new trust for your relationship and maintains authority. The best way to build that loving relationship with your pet is when you can both understand each other.
-                        After the 2 weeks of training, we will hold a private lesson with you and your dog so you can learn all of the new things your dog knows, along with a follow up lesson.  We offer free advice and we always love updates to hear how you and your canine are doing.</p>
+                    <h3 data-toggle="collapse" data-target="#boardTrainText" aria-expanded="false" aria-controls="boardTrainText">Board & Train</h3>
+                    <div class="collapse" id="boardTrainText">
+                        <p>Our Board & Train program runs for 2 straight weeks.
+                            Let us do the work for you! We offer a “real life distractions” based program with a very flexible schedule.  Your dog moves into our house with us and our 3 dogs, and becomes a part of our family!
+                            Along with love, we introduce obedience commands through playing games and focused lessons throughout the day. Teaching your dog to maintain commands until released will build a whole new trust for your relationship and maintains authority. The best way to build that loving relationship with your pet is when you can both understand each other.
+                            After the 2 weeks of training, we will hold a private lesson with you and your dog so you can learn all of the new things your dog knows, along with a follow up lesson.  We offer free advice and we always love updates to hear how you and your canine are doing.</p>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <img class="pull-right" src="http://fillmurray.com/400/400"/>
+                    <!--<img class="pull-right" src="http://fillmurray.com/400/400"/>-->
                 </div>
             </div>
         </div>
@@ -138,14 +172,16 @@
         <div class="privateLessons">
             <div class="row">
                 <div class="col-md-6">
-                    <img class="pull-left" src="http://fillmurray.com/400/400"/>
+                    <!--<img class="pull-left" src="http://fillmurray.com/400/400"/>-->
                 </div>
                 <div class="col-md-6">
-                    <h3>Private Lessons</h3>
+                    <h3 data-toggle="collapse" data-target="#privateLessonsText" aria-expanded="false" aria-controls="privateLessonsText">Private Lessons</h3>
+                    <div class="collapse" id="privateLessonsText">
                     <p>Our Board & Train program runs for 2 straight weeks.
                         Let us do the work for you! We offer a “real life distractions” based program with a very flexible schedule.  Your dog moves into our house with us and our 3 dogs, and becomes a part of our family!
                         Along with love, we introduce obedience commands through playing games and focused lessons throughout the day. Teaching your dog to maintain commands until released will build a whole new trust for your relationship and maintains authority. The best way to build that loving relationship with your pet is when you can both understand each other.
                         After the 2 weeks of training, we will hold a private lesson with you and your dog so you can learn all of the new things your dog knows, along with a follow up lesson.  We offer free advice and we always love updates to hear how you and your canine are doing.</p>
+                    </div>
                 </div>
             </div>
         </div>
