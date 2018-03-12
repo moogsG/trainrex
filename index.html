@@ -43,7 +43,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#" style="padding:2px"><span><img src="./imgs/logo.png" width="50" height="50" style="padding-top:0" alt=""></span></a>
-            <span class="text-center logo-font"><p>Train Rex</p></span>
+          <span class="text-center logo-font" style="position: fixed"><p>Train Rex</p></span>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <div class="navbar-form navbar-right">
@@ -117,15 +117,15 @@
               Our goal is to help you to achieve a happy dog that
               wherever you go, can be a part of your everyday life!
               Leave it to us!
-          </p><p>
+          </p>
+          <p>
               The best part? Along with 2 different programs, we offer free demonstrations for you to come out with your dog and see first-hand what you can expect from us!
           </p>
           <hr>
           <div class="text-center">
               <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-info">Book a demonstrations</button>
+                  <button type="button" class="btn btn-info">Book a demonstration</button>
                   <button type="button" class="btn btn-info">View our programs</button>
-                  <!--<button type="button" class="btn btn-secondary"></button>-->
               </div>
           </div>
 
@@ -151,11 +151,13 @@
 
       <hr>
         <section class="programs">
-            <h2 class=" heading text-center">Programs</h2>
+            <h1 class=" heading text-center">Programs</h1>
         <div class="boardTrain">
             <div class="row">
+              <div class="container boardTrainToggle">
+                <h3 data-toggle="collapse" data-target="#boardTrainText" aria-expanded="false" aria-controls="boardTrainText">Board & Train</h3>
+              </div>
                 <div class="col-md-6">
-                    <h3 data-toggle="collapse" data-target="#boardTrainText" aria-expanded="false" aria-controls="boardTrainText">Board & Train</h3>
                     <div class="collapse" id="boardTrainText">
                         <p>Our Board & Train program runs for 2 straight weeks.
                             Let us do the work for you! We offer a “real life distractions” based program with a very flexible schedule.  Your dog moves into our house with us and our 3 dogs, and becomes a part of our family!
@@ -171,16 +173,34 @@
 
         <div class="privateLessons">
             <div class="row">
-                <div class="col-md-6">
-                    <!--<img class="pull-left" src="http://fillmurray.com/400/400"/>-->
+                <!-- <div class="col-md-6">
+                    <img class="pull-left" src="http://fillmurray.com/400/400"/>
+                </div> -->
+                <div class="container privateLessonsToggle">
+                  <h3 data-toggle="collapse" data-target="#privateLessonsText" aria-expanded="false" aria-controls="privateLessonsText">Private Lessons</h3>
                 </div>
                 <div class="col-md-6">
-                    <h3 data-toggle="collapse" data-target="#privateLessonsText" aria-expanded="false" aria-controls="privateLessonsText">Private Lessons</h3>
                     <div class="collapse" id="privateLessonsText">
                     <p>Our Board & Train program runs for 2 straight weeks.
                         Let us do the work for you! We offer a “real life distractions” based program with a very flexible schedule.  Your dog moves into our house with us and our 3 dogs, and becomes a part of our family!
                         Along with love, we introduce obedience commands through playing games and focused lessons throughout the day. Teaching your dog to maintain commands until released will build a whole new trust for your relationship and maintains authority. The best way to build that loving relationship with your pet is when you can both understand each other.
                         After the 2 weeks of training, we will hold a private lesson with you and your dog so you can learn all of the new things your dog knows, along with a follow up lesson.  We offer free advice and we always love updates to hear how you and your canine are doing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="polishingClass">
+            <div class="row">
+                <!-- <div class="col-md-6">
+                    <img class="pull-left" src="http://fillmurray.com/400/400"/>
+                </div> -->
+                <div class="col-md-6">
+                    <h3 data-toggle="collapse" data-target="#polishingClassText" aria-expanded="false" aria-controls="polishingClassText">Group Polishing Class</h3>
+                    <div class="collapse" id="polishingClassText">
+                    <p>
+                      All of our clients are invited to attend a Polishing Class which is held once a month.  This class is a great opportunity for you to practice your handling skills, as well as a chance to continue to socialize your dog.  We love having this class as a way to stay connected with everyone.
+                    </p>
                     </div>
                 </div>
             </div>
@@ -191,9 +211,79 @@
             <h1 class="heading text-center">Testimonials</h1>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal1">
                         <div class="card-img-top image-cropper center-block">
-                            <img class="rounded img-circular" src="https://static.wixstatic.com/media/9be035_d0e910d06e944676949e069458cbe0df.jpg" alt="Card image cap">
+                            <img class="rounded img-circular" src="./imgs/comments/1.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-block text-center">
+                            <h4 class="card-title">Carrie Lisowec-Caouette</h4>
+                            <hr>
+                            <p class="card-text">
+                              I am more than impressed with what has been accomplished.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal2">
+                        <div class="card-img-top image-cropper center-block">
+                            <img class="rounded img-circular" src="./imgs/comments/2.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-block text-center">
+                            <h4 class="card-title">Laurie Watt</h4>
+                            <hr>
+                            <p class="card-text">
+                              I was your biggest skeptic but not now.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal3">
+                        <div class="card-img-top image-cropper center-block">
+                            <img class="rounded img-circular" src="./imgs/comments/3.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-block text-center">
+                            <h4 class="card-title">Darcy Major</h4>
+                            <hr>
+                            <p class="card-text">
+                              If I didn't know better I'd say they replaced her with a different dog.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal4">
+                        <div class="card-img-top image-cropper center-block">
+                            <img class="rounded img-circular" src="./imgs/comments/4.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-block text-center">
+                            <h4 class="card-title">Elsie and James Pahl</h4>
+                            <hr>
+                            <p class="card-text">We feel we have a better understanding of a dog's mind and how a dog learns.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal5">
+                        <div class="card-img-top image-cropper center-block">
+                            <img class="rounded img-circular" src="./imgs/comments/5.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-block text-center">
+                            <h4 class="card-title">Lyle & Rachelle Houle</h4>
+                            <hr>
+                            <p class="card-text">
+                              We are so incredibly happy with the progress she made during her short time at Train Rex.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal6">
+                        <div class="card-img-top image-cropper center-block">
+                            <img class="rounded img-circular" src="./imgs/comments/6.jpg" alt="Card image cap">
                         </div>
                         <div class="card-block text-center">
                             <h4 class="card-title">Georgina Barath </h4>
@@ -202,94 +292,98 @@
                         </div>
                     </div>
                 </div>
+              </div>
+              <div class="row">
                 <div class="col-md-4">
-                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal7">
                         <div class="card-img-top image-cropper center-block">
-                            <img class="rounded img-circular" src="https://static.wixstatic.com/media/9be035_d0e910d06e944676949e069458cbe0df.jpg" alt="Card image cap">
+                            <img class="rounded img-circular" src="./imgs/comments/7.jpg" alt="Card image cap">
                         </div>
                         <div class="card-block text-center">
-                            <h4 class="card-title">Georgina Barath </h4>
+                            <h4 class="card-title">Aimee, Ian, Bodhi, and Fox</h4>
                             <hr>
-                            <p class="card-text">Baxter was seven months old when we first came to you and I was afraid that I would have to find a new home for him.</p>
+                            <p class="card-text">They are generous with their time and attention, and never leave you feeling confused.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal8">
                         <div class="card-img-top image-cropper center-block">
-                            <img class="rounded img-circular" src="https://static.wixstatic.com/media/9be035_d0e910d06e944676949e069458cbe0df.jpg" alt="Card image cap">
+                            <img class="rounded img-circular" src="./imgs/comments/8.jpg" alt="Card image cap">
                         </div>
                         <div class="card-block text-center">
-                            <h4 class="card-title">Georgina Barath </h4>
+                            <h4 class="card-title">Aaron, Joly, Ryder and Kaia</h4>
                             <hr>
-                            <p class="card-text">Baxter was seven months old when we first came to you and I was afraid that I would have to find a new home for him.</p>
+                            <p class="card-text">It literally feels like we have a different dog and it has only been one week since our last lesson.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal9">
                         <div class="card-img-top image-cropper center-block">
-                            <img class="rounded img-circular" src="https://static.wixstatic.com/media/9be035_d0e910d06e944676949e069458cbe0df.jpg" alt="Card image cap">
+                            <img class="rounded img-circular" src="./imgs/comments/9.jpg" alt="Card image cap">
                         </div>
                         <div class="card-block text-center">
-                            <h4 class="card-title">Georgina Barath </h4>
+                            <h4 class="card-title">Chloe & Jake</h4>
                             <hr>
-                            <p class="card-text">Baxter was seven months old when we first came to you and I was afraid that I would have to find a new home for him.</p>
+                            <p class="card-text">Now he is easier to manage, a breeze to take on walks and everyday is more behaved!</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal10">
+                        <div class="card-img-top image-cropper center-block">
+                            <img class="rounded img-circular" src="./imgs/comments/10.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-block text-center">
+                            <h4 class="card-title">Mark & Chantelle</h4>
+                            <hr>
+                            <p class="card-text">Train-Rex did such a phenomenal job!</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal11">
                         <div class="card-img-top image-cropper center-block">
-                            <img class="rounded img-circular" src="https://static.wixstatic.com/media/9be035_d0e910d06e944676949e069458cbe0df.jpg" alt="Card image cap">
+                            <img class="rounded img-circular" src="./imgs/comments/11.jpg" alt="Card image cap">
                         </div>
                         <div class="card-block text-center">
-                            <h4 class="card-title">Georgina Barath </h4>
+                            <h4 class="card-title">Sandee & Keith</h4>
                             <hr>
-                            <p class="card-text">Baxter was seven months old when we first came to you and I was afraid that I would have to find a new home for him.</p>
+                            <p class="card-text">They were so quick to respond to our texts and concerns, encouraged us, and we always felt like they were there for us.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal">
+                    <div class="card container-fluid" style="width: 20rem" data-toggle="modal" data-target="#testimonialsModal12">
                         <div class="card-img-top image-cropper center-block">
-                            <img class="rounded img-circular" src="https://static.wixstatic.com/media/9be035_d0e910d06e944676949e069458cbe0df.jpg" alt="Card image cap">
+                            <img class="rounded img-circular" src="./imgs/comments/12.jpg" alt="Card image cap">
                         </div>
                         <div class="card-block text-center">
-                            <h4 class="card-title">Georgina Barath </h4>
+                            <h4 class="card-title">Natasha & Forrest</h4>
                             <hr>
-                            <p class="card-text">Baxter was seven months old when we first came to you and I was afraid that I would have to find a new home for him.</p>
+                            <p class="card-text">We picked her up at the end of training and we were amazed by her behavior.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!--Modal for testimonials-->
-            <div class="modal fade" id="testimonialsModal">
+            <div class="modal fade" id="testimonialsModal1">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <div class="card-img-top image-cropper center-block">
-                                <img class="rounded img-circular" src="https://static.wixstatic.com/media/9be035_d0e910d06e944676949e069458cbe0df.jpg" alt="">
+                                <img class="rounded img-circular" src="./imgs/comments/1.jpg" alt="">
                             </div>
                         </div>
                         <div class="modal-body">
 
-                            <p>I am so glad that my friend gave me a referral to Train Rex.</p>
-
-
-
-                            <p>I just want to let other people know that if they own a beagle, they can definitely be trained using your methods.  Baxter was seven months old when we first came to you and I was afraid that I would have to find a new home for him. Going, or rather trying to go for a walk had become a dreaded thing.  He would race to the end of his leash and turn a summersault or pull for all he was worth standing on his back legs the whole walk.  He wouldn’t come when called and there was no way he would pay any attention to me outside.  Now he is a completely different dog.  Going for a walk is fun.  I have a fenced acreage and I can have him off leash and call him and he will come right away.  Of course he knows his basic commands and is improving
-
-                                all the time.  I can take him to my daughters house where there are two cats and he leaves them alone.
-
-                                I even called him off a squirrel the other day, one of his favorite things to chase.</p>
-
-
-
-                                <p>I cannot tell you how pleased I am with him. I can take him visiting and everyone loves him;
-
-                                Thank you so much. ~ Georgina Barath </p>
+                            <p>
+                              Huge thank you!!!! I cannot say enough as to the success of my " doggie makeover " I had a dog who loved life, loved playing, loved jumping, and loved not listening - today he is a new member of our family - still loves to play but does so with so much more respect- the jumping is now completely under control and he listens better than my 12 year old - I am more than impressed with what has been accomplished. The proof is sitting on my deck looking up at me with bright white eyes - thank you guys you are amazing - Can't wait until next week to see our progress !!! ~ Carrie Lisowec-Caouette
+                            </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -297,6 +391,291 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="testimonialsModal2">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="card-img-top image-cropper center-block">
+                                <img class="rounded img-circular" src="./imgs/comments/2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                              WOW.... We have got a great second chance with our girl! It has only been one day since we had her back and the panic attacks can be controlled and she comes out of them in minutes... Not HOURS! I was your biggest skeptic but not now. Nothing could get her out of her panics but she totally understands this language. You will be hearing many more of our amazing accomplishments!  Thank you both for your determination and passion. And of course your "gentle" push to make me do this!  ~ Laurie Watt
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="testimonialsModal3">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="card-img-top image-cropper center-block">
+                                <img class="rounded img-circular" src="./imgs/comments/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                              Diana & Joel, I would like to express how happy I am with the results I received when taking my dog Gypsy, to Train Rex. Being only 18 months old, Gypsy has lots of energy and a mind of her own. She needed obedience training badly. I opted for the 2 week training package and could not be happier with the results. She now is obedient, calmer. I now enjoy her company immensely and she is very sociable with other dogs and humans. If I didn't know better I'd say they replaced her with a different dog. ~ Darcy Major
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="testimonialsModal4">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="card-img-top image-cropper center-block">
+                                <img class="rounded img-circular" src="./imgs/comments/4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                              I spent so much time trying to train Pepper and Ginger and getting nowhere that I wanted to cry. I was told that’s why people give away there puppies in the first two years is because of frustration. So I decided I needed help.
+                            </p>
+                            <p>
+                              Because Pepper and Ginger were so young they were very unruly and they fed off of each other’s excitement making it virtually impossible to train them. I would just get started with one and the other would intervene and they were off doing their own thing NOT listening. Pepper would bark at anyone passing us on our walks or other dogs not to mention at the neighbors. When we went on a walk it was like I was being pulled by a two pup sled dog racing team. Now walking so much better and we all enjoy it.
+                            </p>
+                            <p>
+                              In the short time that Train Rex had worked with Pepper and Ginger, they have gained confidence, learned to focus on the task at hand and the training has actually calmed them down. They responded so well to the training that now it’s great to sit back and watch them think. They actually look forward to the time we spend training and learning new things. It’s like they actually come over and look at us saying: ok what do we get to learn now! We feel we have a better understanding of a dog's mind and how a dog learns.
+                            </p>
+                            <p>
+                              "Having a dog happily perform the things you ask of it is so much better than having a dog going through the motions or not doing anything you ask.
+                            </p>
+                            <p>
+                              I want to thank Train Rex for giving us a great start.
+                            </p>
+                            <p>
+                              "Awesome.....awesome. Dog Training! Pepper and Ginger are now 9 months old and the best behaved dogs we have ever had. Everyone loves them and would like to kidnap them because they are so well behaved. Not going to happen ever!! ~ Elsie and James Pahl
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="testimonialsModal5">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="card-img-top image-cropper center-block">
+                                <img class="rounded img-circular" src="./imgs/comments/5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                              Cinnamon was brought to Train Rex as a disobedient, A.D.D stricken, nervous wreck of a dog. After two short weeks she listens to multiple commands, no longer has "accidents" in the house and has completely mellowed out. She is a pleasure to go on walks with now as she no longer rips the leash out of both ours or our children's hands. We are so incredibly happy with the progress she made during her short time at Train Rex. She is such a sweet dog to be around now. Our only wish is we had sent Cinnamon for training earlier!!!
+                            </p>
+                            <p>
+                              Thank you Joel & Diana we truly appreciate all that you have done for our Cinnamon, we are able to enjoy her now more than ever! ~ Lyle & Rachelle Houle
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="testimonialsModal6">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="card-img-top image-cropper center-block">
+                                <img class="rounded img-circular" src="./imgs/comments/6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                              I am so glad that my friend gave me a referral to Train Rex.
+                            </p>
+                            <p>
+                              I just want to let other people know that if they own a beagle, they can definitely be trained using your methods.  Baxter was seven months old when we first came to you and I was afraid that I would have to find a new home for him. Going, or rather trying to go for a walk had become a dreaded thing.  He would race to the end of his leash and turn a summersault or pull for all he was worth standing on his back legs the whole walk.  He wouldn’t come when called and there was no way he would pay any attention to me outside.  Now he is a completely different dog.  Going for a walk is fun.  I have a fenced acreage and I can have him off leash and call him and he will come right away.  Of course he knows his basic commands and is improving all the time.  I can take him to my daughters house where there are two cats and he leaves them alone. I even called him off a squirrel the other day, one of his favorite things to chase.
+                            </p>
+                            <p>
+                              I cannot tell you how pleased I am with him. I can take him visiting and everyone loves him; Thank you so much. ~ Georgina Barath
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="testimonialsModal7">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="card-img-top image-cropper center-block">
+                                <img class="rounded img-circular" src="./imgs/comments/7.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                              Many thanks to Joel and Diana for helping us train our dogs using the e-collar! Their service is holistic, however, and they helped us globally, from integrating a new puppy into our home to working through specific fears our puppy had. They are generous with their time and attention, and never leave you feeling confused. And training sessions are always fun, even when you think they might be challenging...it's extremely rewarding to always walk away having made huge gains (owner and dog).
+                            </p>
+                            <p>
+                              Joel had helped us to feel confident that our dog and puppy were getting along okay when we first brought the pup home. He was so responsive during a time of need! But he was never pushy, only helpful without expectation. So we continued with them to train both our Labrador Retrievers, young and old. We have a pretty solid training regime at our house to start with, and high expectations of good behaviour, but had consistently struggled with particular areas (e.g., heel) in the past. This training was the key!!!
+                            </p>
+                            <p>
+                              Fox, the lab puppy, responded to training perfectly. He was just coming into a stage of exuberance that was not particularly fun when we commenced training. He loved it, continues to love it, and has been absolutely amazing ever since. He runs to get his collar on every morning because he knows many good things happen when it is on! He stays in the yard, even when his favourite neighbour dog runs home or when exciting things are happening next door. I am able to call him off animals and people, even at high excitement levels. He has a beautiful heel, in all environments. These are just a few of the things that we appreciate most. It is not perfect all the time (pretty darn close though), but he is only 10 months and still learning (as are we). But really, who can say their 10 month old Lab puppy is extremely obedient, respectful, and a complete joy to own? Not many. But we can!!!!! Thanks to diligence, and the support of Joel and Diana! It is also very important to us that they helped with areas of our choice, and went above and beyond to ensure our needs were met (an hour of stairs with a very anxious, jerking and squealing puppy until he was calm).
+                            </p>
+                            <p>
+                              The older lab, Bodhi, was near perfect, but he had a habit or two (e.g., choosy recall, poor heel) that made us crazy and that we'd done every kind of training out there to fix and no training/trainer managed to help. Well, we don't deal with that anymore! The collar was just the little attention getter and holder we needed. Now we have a perfect older lab! :)
+                            </p>
+                            <p>
+                              We love our dogs, they are our children. Their happiness is priority number one. And this style of training has ensured that our whole family is happier than ever and that our dogs have maximum freedom but remain under control. Even when someone else cares for them, and no e-collars are worn, the caregivers comment on how obedient our dogs are!
+                            </p>
+                            <p>
+                              Train Rex = Great tool (e-collar)! Caring, invested trainers! Fun for everyone! SUCCESS!
+                            </p>
+                            <p>
+                              Aimee, Ian, Bodhi, and Fox
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="testimonialsModal8">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="card-img-top image-cropper center-block">
+                                <img class="rounded img-circular" src="./imgs/comments/8.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                              We are unbelievably happy with the results and experience of the training. After our first lesson it was evident that it clearly changed something in him. Joel and Diana and all the dogs were so fun to work with and were loaded with great tips and advice.
+                            </p>
+                            <p>
+                              Everyday life is so much easier now knowing our dog will always (mostly) listen. Our issues with people are greatly improving even though we did not specifically work on it.
+                            </p>
+                            <p>
+                              We constantly get compliments on how good our dog is and how well he listens. It literally feels like we have a different dog and it has only been one week since our last lesson.
+                            </p>
+                            <p>
+                              Overall I definitely recommend training with Train Rex, you will not be disappointed! Thank you so much Joel and Diana!!  ~ Aaron, Joly, Ryder and Kaia
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="testimonialsModal9">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="card-img-top image-cropper center-block">
+                                    <img class="rounded img-circular" src="./imgs/comments/9.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>
+                                  King was a wild little rescue puppy who needed to learn basics and manners. Now he is easier to manage, a breeze to take on walks and everyday is more behaved! Having him trained is less stressful then the first few months we had him. We chose Train Rex because we wanted private one on one training where it was all about King. We didn’t seek out e collar training but SO glad we ended up with it. We have so much more control, peace of mind and get to show off our trained, cute puppy!    Thank you Joel + Diana! ~ Chloe & Jake
+                                </p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <div class="modal fade" id="testimonialsModal10">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="card-img-top image-cropper center-block">
+                                <img class="rounded img-circular" src="./imgs/comments/10.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                              Wow!! What a big improvement we noticed in our dog after taking her to Train-Rex! Our dog Ellie is sweet, kind, and would never hurt a fly. The issues that we struggled with is controlling her excitement when around people. As we are often around lots of family and friends, we struggled with the fact that the best decision was to leave Ellie at home. Train-Rex did such a phenomenal job with teaching her the commands of sit, down, place, wait, and break! We are now able to bring Ellie wherever we go and know that she will listen when given a command. She still hasn’t got rid of her excitement, but she is able to control herself when wearing the e-collar. My wife and I have been hesitant from day 1 in bringing her to an off-leash dog park, and now we don’t worry one bit! We would HIGHLY Train-Rex to anyone who has issues with their dogs, especially if they have ‘selective hearing’ and only listen at certain times. The trainers are so kind and caring towards animals which made the whole two weeks that much more comfortable as we were hesitant in leaving our dog in the care of someone new. Our only regret is that we waited till she was a year and a half and wish we would have gone sooner!
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal fade" id="testimonialsModal11">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <div class="card-img-top image-cropper center-block">
+                              <img class="rounded img-circular" src="./imgs/comments/11.jpg" alt="">
+                          </div>
+                      </div>
+                      <div class="modal-body">
+
+                          <p>
+                            Although buddies to begin with, a couple of months after adopting Larry, the two dogs began fighting. We were working with two different trainers but not having any success in stopping this behaviour. The dogs were kept apart in the house and couldn’t even walk by each other without lunging and exhibiting vicious behavior. We knew we needed constant hands on training by an expert and found Joel and Diana (Train Rex) online. After reading about their customized training and reading all the testimonials, we knew that we were on to something. We have our dogs home from their training with Diana and Joel and what a difference. The dogs are calm, receptive, listening and are free in the house together. We have the tools and training to make any corrections and we are relaxed instead of always on edge around them. We now know the right way to train them and what a difference it is making in their lives and ours. The dogs are tired now after we spend time training them and we had never seen Odie tired or calm in the year that we have had him. His energy level has come down dramatically and the difference now is that he listens and actually comes when called. Larry was very insecure before and has come home from Diana and Joel’s more confident and is not glued by my side anymore. He had bad separation anxiety before but now he knows he is ok if I’m not there. Jealousy and quick movement were a big reason for their fighting. I am now confident that I can handle both dogs alone, and the feelings of anxiousness are gone. Our other two small dogs have been benefiting as well, as they are learning alongside Larry and Odie at home and we see a big improvement in their listening skills. They are all more focussed and a joy to be around. We can take all of the dogs out in public and not have to worry about them misbehaving. We have the knowledge and the tools to control them.
+                          </p>
+                          <p>
+                            Diana and Joel treat the dogs like their own, and there is no shortage of love and cuddles for the new pack members. That really was the deciding vote for us to have our dogs train with them. In fact, when we went to pick them up, the two dogs went and sat with Diana on the couch and left us sitting alone! They were so quick to respond to our texts and concerns, encouraged us, and we always felt like they were there for us. They helped us feel at ease immediately with their hospitality. It is like going to the home of a friend, and we now think of them as friends. We were so lucky to find the help we all needed with Diana and Joel and can’t thank them enough for giving us our pups and our lives back. We are truly grateful and look forward to years of enjoyment with a well-trained pack of our own. ~ Sandee & Keith
+                          </p>
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="modal fade" id="testimonialsModal12">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="card-img-top image-cropper center-block">
+                                <img class="rounded img-circular" src="./imgs/comments/12.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                              We got our  8 week old puppy.  She was sweet and loved to play!  She quickly developed a number of dissatisfying  habits including rough mouthing play, jumping and leash pulling.  As she grew, controlling her was almost impossible in these situations.
+                            </p>
+                            <p>
+                              After talking to Joel & Diana we were so happy they would take her without hesitation,  both so calm and confident that we could  fix things.    We survived until the board and train week and finally dropped her off!
+                            </p>
+                            <p>
+                              We picked her up at the end of training and we were amazed by her behavior.   Happy, calm and very well mannered!  Her bad jumping and mouthing habits were gone and she had learned so much!   We now have the tools to continue working with her and teaching her new things!  We want to thank Train Rex for training Nukka and teaching us how to carry it on in everyday life peacefully.
+                            </p>
+                            <p>
+                              Natasha & Forrest
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
             <script>
 
             </script>
